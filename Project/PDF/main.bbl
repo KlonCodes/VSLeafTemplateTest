@@ -40,7 +40,8 @@
         {test-key}
 \bibfield{author}{\bibinfo{person}{person}.} \bibinfo{year}{when}\natexlab{}.
 \newblock \showarticletitle{paper}.
-\newblock \bibinfo{journal}{\emph{book}} (\bibinfo{year}{when}).
+\newblock \bibinfo{journal}{\emph{book}} (\bibinfo{year}{when}),
+  \bibinfo{pages}{1--10}.
 \newblock
 
 
