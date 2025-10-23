@@ -14,11 +14,13 @@
 - It should prompt you to install all extensions needed.
   - If not, they're in `extensions.json`
   - The `settings.json` file has some parameters to check out.
+  - If you change the main `.tex` file, fon't forget to add `\input{preamble.tex}` to get the necessary packages and commands.
 
 ## Editor Instructions
 
 - Everything should *hopefully* just work, assuming all the above is done.
 - Depending on existing VS Code setup you might have conflicts to resolve.
+- To comment use `\cin{text}` for inline comments, or `\chl[name]{comment}` for longer, hoverable comments that don't break the flow of teh document. 
 
 ## Live Collaboration
 

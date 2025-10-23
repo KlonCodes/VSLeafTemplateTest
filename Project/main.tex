@@ -1,4 +1,5 @@
 %%  Hello Folks
+% chktex-file 1
 % chktex-file 2
 % chktex-file 8
 % chktex-file 24
@@ -6,6 +7,9 @@
 \documentclass[sigconf, screen, review]{acmart}
 % when submitting to PCS change to: \documentclass[sigconf, authordraft, review, anonymous]{acmart}
 % when submitting to TAPS change to: \documentclass[sigconf]{acmart}
+
+%% All the added Latex Stuff; packages and new commands.
+\input{preamble.tex}
 
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -34,31 +38,6 @@
 %%
 %% If you are preparing content for an event sponsored by ACM SIGGRAPH, use "author year" style.
 %%\citestyle{acmauthoryear}
-
-% ------------------------------------------------
-% Additional Packages I often use
-% ------------------------------------------------
-% Tables and Formatting
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{array} 
-\usepackage{makecell} 
-% Figures and Wrapping
-\usepackage{wrapfig} 
-\usepackage{float}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{enumitem}
-\usepackage{graphicx}
-% Just for better landmarks when writing
-\AtBeginDocument{%
-  \hypersetup{
-    linkcolor=Green,
-    citecolor=Magenta,
-    urlcolor=Orange
-  }%
-}
-% ----------------------------------------------
 
 %%
 \begin{document}
@@ -162,7 +141,6 @@
 \ccsdesc{Do Not Use This Code~Generate the Correct Terms for Your Paper}
 \ccsdesc[100]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
 
-\par wow
 %%
 %% Keywords that accurately describe the work being presented. Separate the keywords with commas.
 \keywords{Do, Not, Use, This, Code, Put, the Correct, Terms, for, Your, Paper}
@@ -188,14 +166,16 @@
 
 \section{Related Work}
 \subsection{Nested}
-\par Wow. And citation \cite{test-key}
-\subsubsection{nested again}
+\par Wow. And citation \cite{knuth1990}.
+\subsubsection{Nested again}
 \par Hmm, same line.
 
-\section{System}
+\section{Figure References}
 \par (See Figure \ref{fig:testone}), but don't forget figure \ref{fig:testtwo}.
-\section{Results}
-\par And so on and so forth
+
+\section{Comments}
+\cin{This is a cin comment box}
+\par But, we could also do a \chl[klon]{use chl to highlight text} less-flow-breaking comment.
 
 \section{Discussion}
 \begin{figure}[!htbp]

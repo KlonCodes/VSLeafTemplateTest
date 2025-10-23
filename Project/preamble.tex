@@ -1,0 +1,41 @@
+% ------------------------------------------------
+% Packages Etc.
+% ------------------------------------------------
+
+% Tables and Formatting
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array} 
+\usepackage{makecell} 
+
+% Figures and Wrapping
+\usepackage{wrapfig} 
+\usepackage{float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+% Comments
+\usepackage{todonotes}
+\newcommand{\cin}{\todo[inline, color=green!80!white!35]}
+\usepackage[markup=Highlight,color=pink]{pdfcomment}
+\newcommand{\chl}[2][]{\pdfmarkupcomment[author={#1},markup=Highlight]{-- #1 --}{#2}}
+
+% Other
+\usepackage{soul}
+\usepackage{silence}
+\WarningFilter{soulutf8}{This package is obsolete}
+
+
+% Just for better landmarks when writing
+\AtBeginDocument{%
+  \hypersetup{
+    linkcolor=Green,
+    citecolor=Magenta,
+    urlcolor=Orange
+  }%
+}
+
+
+% ----------------------------------------------
