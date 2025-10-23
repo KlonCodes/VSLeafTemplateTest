@@ -6,3 +6,6 @@ Klon
 color
 chl
 cin
+desc
+XXXX
+XXXXXXX

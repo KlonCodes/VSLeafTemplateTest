@@ -52,7 +52,22 @@
   "editor.formatOnSave": true,
   "latex-workshop.latex.pdfWatch.delay": 500,
   "latex-workshop.codespaces.portforwarding.openDelay": 20000,
+<<<<<<< HEAD
   "cSpell.words": ["authornote", "authornotemark", "chktex", "SIGGRAPH"],
 
   "latex-workshop.linting.chktex.enabled": false
+=======
+  "cSpell.words": [
+    "authornote",
+    "authornotemark",
+    "chktex",
+    "SIGGRAPH",
+    "texbook",
+    "thebibliography",
+    "unskip"
+  ],
+  "cSpell.enabledFileTypes": {
+    "plaintext": false
+  }
+>>>>>>> 007673c934a7ecb51d2d0484da87d1ed92d37a15
 }
