@@ -4,20 +4,18 @@
 % chktex-file 8
 % chktex-file 24
 % chktex-file 32
+
 \documentclass[sigconf, screen, review]{acmart}
 % when submitting to PCS change to: \documentclass[sigconf, authordraft, review, anonymous]{acmart}
 % when submitting to TAPS change to: \documentclass[sigconf]{acmart}
-
-%% All the added Latex Stuff; packages and new commands.
-\input{preamble.tex}
 
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     Bib\TeX}}}
+\listfiles
 
-%% Rights management information.
-%% This information is sent when you complete the rights form.
+%% Rights management -- sent when you complete the rights form.
 \setcopyright{acmlicensed}
 \copyrightyear{2018}
 \acmYear{2018}
@@ -32,22 +30,22 @@
 %% \acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
 \acmISBN{978--1--4503--XXXX--X/2018/06}
 
-%% Submission ID. -  Use this when submitting an article to a sponsored event.
+%% Submission ID. -  when submitting an article to a sponsored event.
 %%\acmSubmissionID{123-A56-BU3}
 
-%%
-%% If you are preparing content for an event sponsored by ACM SIGGRAPH, use "author year" style.
+%% If for an event sponsored by ACM SIGGRAPH, use "author year" style.
 %%\citestyle{acmauthoryear}
+
+%% All the added Latex Stuff; packages and new commands.
+\input{preamble.tex}
 
 %%
 \begin{document}
 %%
 
-%%
 %%[short title in page headers]{Full Title}
 \title[shorty]{My Slightly Modified ACM Template: 2025}
 
-%%
 %% Only in shared affiliation of the first two authors; "authornote" and "authornotemark"
 % \author{Co-First Author}
 % \authornote{If two authors contributed equally.}
@@ -93,9 +91,7 @@
 %%
 \renewcommand{\shortauthors}{FIRST et al.}
 
-%%
 %% ABSTRACT
-%%
 \begin{abstract}
 	\begin{itemize}[label={}, leftmargin=0pt,itemsep=0pt, parsep=0pt] % itemize style i like for short stuff
 		\item \textbf{The Way the World Is}
@@ -108,9 +104,7 @@
 	\end{itemize}
 \end{abstract}
 
-%%
 %% Copy and paste from http://dl.acm.org/ccs.cfm.
-%%
 \begin{CCSXML}
 	<ccs2012>
 	<concept>
@@ -146,7 +140,8 @@
 \keywords{Do, Not, Use, This, Code, Put, the Correct, Terms, for, Your, Paper}
 %% "teaser" image appears typically spans the page.
 \begin{teaserfigure}
-	\includegraphics[width=\textwidth]{images/example.png}
+	\centering
+	\includegraphics[width=0.8\textwidth]{../../.vscode/VSleaf.png}
 	\caption{This is the caption that shows up for the Teaser Image}
 	\Description{this is the hidden, secret caption}
 	\label{fig:teaser}
@@ -159,23 +154,23 @@
 \maketitle
 
 %%----------------------------------------------
-%% Begin Writing Here
+%% Body
 %%----------------------------------------------
 \section{Introduction}
 \par Intro here
 
 \section{Related Work}
 \subsection{Nested}
-\par Wow. And citation \cite{knuth1990}.
-\subsubsection{Nested again}
-\par Hmm, same line.
+\par Citations: \cite{knuth1990}.
+\subsubsection{Nested further}
+\par Sub-sub goes here, same line.
 
 \section{Figure References}
 \par (See Figure \ref{fig:testone}), but don't forget figure \ref{fig:testtwo}.
 
 \section{Comments}
 \cin{This is a cin comment box}
-\par But, we could also do a \chl[klon]{use chl to highlight text} less-flow-breaking comment.
+\par But, we could also do a \chl[klon]{use chl to add a hover comment with highlight text link} less-flow-breaking comment.
 
 \section{Discussion}
 \begin{figure}[!htbp]

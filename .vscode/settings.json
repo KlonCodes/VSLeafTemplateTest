@@ -66,6 +66,18 @@
     "unskip"
   ],
   "cSpell.enabledFileTypes": {
-    "plaintext": false
-  }
+    "plaintext": false,
+    "sty": false
+  },
+  "latex-workshop.diagnostics.enabled": true,
+  "latex-workshop.message.latexlog.exclude": [
+    "Option `pdftex' has already been used,\\s*\\(hyperref\\)\\s*setting the option has no effect\\.",
+    "texmf-dist",
+    "/usr/local/texlive/"
+  ],
+  "problems.exclude": {
+    "**/texmf-dist/**": true,
+    "**/usr/local/texlive/**": true
+  },
+  "latex-workshop.linting.chktex.enabled": false
 }
